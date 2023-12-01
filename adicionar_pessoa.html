@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Pessoa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="mb-4">Adicionar Pessoa</h1>
+        <form method="POST" action="/adicionar_pessoa">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Adicionar</button>
+        </form>
+        <a href="/" class="btn btn-secondary mt-3">Voltar para a lista</a>
+    </div>
+</body>
+</html>

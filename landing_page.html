@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema CRUD</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Sistema de cadastro - CRUD</h1>
+            <p class="lead">Este é uma aplicação simples, utilizando Python, Flask, CSS, bootstrap e SQL Lite para criação de um CRUD.</p>
+            <hr class="my-4">
+            <p>Utilize as funcionalidades abaixo para começar:</p>
+            <a class="btn btn-primary btn-lg" href="/" role="button">Listar Pessoas</a>
+            <a class="btn btn-success btn-lg" href="/adicionar_pessoa" role="button">Adicionar Pessoa</a>
+            
+            <!-- Adicionando o formulário de consulta -->
+            <form action="/consultar_registro" method="GET" class="form-inline mt-3">
+                <label class="sr-only" for="id">ID:</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="id" name="id" placeholder="ID">
+
+                <label class="sr-only" for="nome">Nome:</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="nome" name="nome" placeholder="Nome">
+
+                <button type="submit" class="btn btn-info mb-2">Consultar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
